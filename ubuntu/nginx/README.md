@@ -20,7 +20,7 @@ sudo nano /etc/nginx/nginx.conf
 2. Restart nginx configuration
 
 ```bash
-sudo systemctl nginx restart
+sudo systemctl restart nginx
 ```
 
 3. Then, that's it! You're done.
