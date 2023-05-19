@@ -1,9 +1,3 @@
-# Scripts
+# Notes
 
-Shell scripts for tools installation and configuration.
-
-## Usage
-
-```bash
-$ sh <script_name>.sh
-```
+Technical notes for different kinds of software development.
