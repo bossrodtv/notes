@@ -21,22 +21,22 @@ systemctl restart nginx
 
 # Update the nginx default configuration
 bash -c 'cat << "EOT" > /etc/nginx/sites-available/default
-  server {
-      listen 80;
-      listen [::]:80;
+server {
+    listen 80;
+    listen [::]:80;
 
-      server_name your_domain;
+    server_name your_domain;
 
-      proxy_http_version 1.1; 
-      proxy_set_header Upgrade \$http_upgrade; # forward the Upgrade header
-      proxy_set_header Connection "upgrade"; # forward the Connection header
-      proxy_set_header Host \$host; # forward the Host header
-      proxy_cache_bypass \$http_upgrade;
+    proxy_http_version 1.1; 
+    proxy_set_header Upgrade \$http_upgrade; # forward the Upgrade header
+    proxy_set_header Connection "upgrade"; # forward the Connection header
+    proxy_set_header Host \$host; # forward the Host header
+    proxy_cache_bypass \$http_upgrade;
 
-      location / {
-          proxy_pass "http://localhost:8000/";
-      }
-  }
+    location / {
+        proxy_pass "http://localhost:8000/";
+    }
+}
 EOT'
 
 # Test the configuration
