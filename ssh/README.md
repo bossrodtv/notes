@@ -34,10 +34,10 @@ You should see the key pair in the list.
 cat ~/.ssh/<your_preferred_ssh_name>.pub
 ```
 
-2. SSH into the server you want to add your SSH key.
+2. SSH into the server that you want to add your public key.
 
 ```bash
-ssh <username>@<server_ip>
+ssh -i ~/.ssh/<your_preferred_ssh_name> <username>@<server_ip>
 ```
 
 3. Append your public key to the `~/.ssh/authorized_keys` file.
