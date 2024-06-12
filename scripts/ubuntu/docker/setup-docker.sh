@@ -28,8 +28,8 @@ apt-get update
 apt-get install -y docker-ce
 
 # Add the current user to the Docker group
-# In this script, the 'ubuntu' should be replaced with your actual username
-usermod -aG docker ubuntu
+# In this script, the 'root' should be replaced with your actual username
+usermod -aG docker root
 
 echo "Docker installation done"
 
