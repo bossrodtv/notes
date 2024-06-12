@@ -25,7 +25,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    server_name your_domain;
+    server_name localhost;
 
     proxy_http_version 1.1; 
     proxy_set_header Upgrade \$http_upgrade; # forward the Upgrade header
