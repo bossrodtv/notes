@@ -11,3 +11,8 @@ sh <script_name>.sh
 ```
 
 6. Then, that's it! You're done.
+
+## For deployment scripts
+
+1. [deploy-aws-ecr.sh](./deploy-aws-ecr.sh)
+2. [deploy-docker-hub.sh](./deploy-docker-hub.sh)
