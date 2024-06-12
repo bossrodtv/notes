@@ -17,10 +17,12 @@ sh <script_name>.sh
 sudo nano /etc/nginx/nginx.conf
 ```
 
-2. Restart nginx configuration
+2. Change the port in the `proxy_pass "http://localhost:8000/"` in the [setup-nginx.sh](./setup-nginx.sh) to the port of your application.
+
+3. Restart nginx configuration
 
 ```bash
 sudo systemctl restart nginx
 ```
 
-3. Then, that's it! You're done.
+4. Then, that's it! You're done.
