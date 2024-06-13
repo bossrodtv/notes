@@ -26,3 +26,13 @@ sudo systemctl restart nginx
 ```
 
 4. Then, that's it! You're done.
+
+## Add domain and Let's Encrypt for Https
+
+1. Update `server_name localhost` to `server_name <your_domain>` in `/etc/nginx/sites-available/<default or your_domain>`
+
+```bash
+sudo nano /etc/nginx/sites-available/<default or your_domain>
+```
+
+2. Run the certbot
